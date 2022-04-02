@@ -4,6 +4,7 @@ color: #2196F3;       color: #757575;*/
 /* Бекграунд background: #E5E5E5; background: #2F303A; */
 /* Колір h1  color: #FFFFFF; */
 /* Колір посилань у футері color: rgba(255, 255, 255, 0.6); */
+
 body {
   color: #757575;
 }
@@ -13,4 +14,82 @@ body {
   --title-text-color: #212121;
   --accent-color: #2196F3;
   --primary-background-color: #E5E5E5;
+}
+
+ul {
+  list-style: none;
+}
+
+.page-header {
+  background: #FFFFFF;
+}
+
+.logo-header {
+color: #000000;
+}
+
+.logo-first-part {
+  color: #2196F3;
+}
+
+.site-nav a {
+ color: var(--title-text-color);
+}
+
+.auth-nav a {
+  color: var(--primary-text-color);
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  color: var(--accent-color);
+}
+
+.primary-button:current {
+  color: var(--accent-color);
+}
+
+/*Hero section*/
+
+.hero-section{
+  background: #2F303A;
+}
+.hero-title {
+  color: #FFFFFF;;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+background-color: var(--accent-color);
+color: var(--primary-background-color);
+}
+
+/*Other sections*/
+
+.secondary-title, .third-title {
+  color: var(--title-text-color);
+}
+
+.main-section {
+background-color: var(--primary-background-color)
+}
+
+.fourth-section {
+  background: #F5F4FA;
+}
+
+.page-footer {
+  background: #2F303A;
+}
+
+.address p {
+color: #FFFFFF;
+}
+
+.address a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.logo-footer {
+  color: #FFFFFF;
 }
