@@ -11,13 +11,17 @@ color: #2196F3;       color: #757575;*/
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196F3;
-  --primary-background-color: #E5E5E5;
+  --main-background-color: #FFFFFF;
+  --grey-background-color: #2F303A;
+  --button-background-color: #188CE8;
+  --secondary-white-background-color: #F5F4FA;
 }
 
 body {
-  color: #757575;
-
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .list, .list a, .page-footer a, .page-header a {
@@ -27,33 +31,31 @@ body {
 
 
 .page-header {
-  background: #FFFFFF;
+  background: var(--main-background-color);
 }
 
 .logo-header {
-color: var(--title-text-color);
-font-family: Oleo Script, sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
+  color: var(--title-text-color);
+ font-family: Raleway, sans-serif;
+ font-weight: 700;
+ font-size: 26px;
+ line-height: 1.19;
+
 }
 
 .logo-first-part {
-  color: #2196F3;
+  color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;  
-  letter-spacing: 0.03em;
 }
 
 .site-nav a {
  color: var(--title-text-color);
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
+ font-weight: 500;
+ line-height: 1.14;
+ letter-spacing: 0.02em;
 }
 
 .site-nav .link.current {
@@ -68,27 +70,31 @@ letter-spacing: 0.02em;
 .auth-nav a {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
 }
 
+.primary-button: {
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 
 .primary-button:hover,
 .primary-button:focus {
   cursor: pointer;
-
   color: var(--accent-color);
-  font-family: inherit;
 }
-
 /*Hero section*/
 
 .hero-section{
-  background: #2F303A;
+  background: var(--grey-background-color);
 }
 .hero-title {
-  color: #FFFFFF;
+  color: var(--main-background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -100,7 +106,7 @@ letter-spacing: 0.02em;
 .secondary-button {
   cursor: pointer;
   
-  color: #FFFFFF;
+  color: var(--main-background-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
@@ -110,8 +116,8 @@ letter-spacing: 0.02em;
 }
 
 .secondary-button:hover{
-  color: #FFFFFF;
-  background-color: #188CE8;
+  color: var(--main-background-color);
+  background-color: var(--button-background-color);
   font-family: inherit;
 }
 
@@ -122,62 +128,61 @@ letter-spacing: 0.02em;
 }
 
 .secondary-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 
 .main-section {
-background-color: var(--primary-background-color)
+ background-color: var(--main-background-color);
 }
 
 .main-section .third-title{
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-weight: 700;
+ line-height: 16px;
+ text-transform: uppercase;
 }
+
 .main-section p {
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+  line-height: 1.71;
+
 }
 
 .fourth-section {
-  background: #F5F4FA;
+  background: var(--secondary-white-background-color);
 }
 
 .team-list li {
-  background: #FFFFFF;
+  background: var(--main-background-color);
 }
 
 .fourth-section .third-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  
 }
 
 .fourth-section p {
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  
 }
 
 .page-footer {
-  background: #2F303A;
+  background: var(--grey-background-color);
 }
 
 .address p {
-color: #FFFFFF;
+ color: var(--main-background-color);
+ line-height: 1.71;
 }
 
 .address a {
   color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
 }
 
 address {
@@ -185,28 +190,28 @@ address {
 }
 
 .logo-footer {
-  color: #FFFFFF;
-  font-family: Oleo Script, sans-serif;
+  color: var(--main-background-color);
+  font-family: Raleway, sans-serif;
 }
 
 
 /*Portfolio*/
 
-.button-portfolio a {
+.button-portfolio {
   cursor: pointer;
 
   color: var(--title-text-color);
-  background: #F5F4FA;
+  background: var(--secondary-white-background-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
+  
 }
 
 .portfolio-examples li {
-  background: #FFFFFF;
+  background: var(--main-background-color);
 }
 
 .portfolio-examples .secondary-title {
@@ -219,10 +224,10 @@ address {
 .portfolio-examples p {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
+ 
 }
-
- .button-portfolio:hover {
-  color: var(--primary-background-color);
+ 
+.button-portfolio:hover {
+  color: var(--main-background-color);
   background-color: var(--accent-color);
 }
